@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --highlight: #fdbd41;
+    --line: #9baec8;
+    --dark-grey: #1c1d29;
+    --text-dark: #333333;
+    --text-light: #c9cbcb;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    color: black;
+}
+
+header {
+    background-image: url('..//Bilder/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    position: relative;
+}
+
+.logo {
+    padding: 40px 50px;
+}
+
+nav ul {
+    list-style: none;
+    position: absolute;
+    top: 20px;
+    left: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 100px;
+    margin-left: -90px;
+}
+
+nav ul li a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 0.8125rem;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: var(--highlight);
+}
+
+main {
+    width: 50%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.date {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: black;
+    margin-top: 20px;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--text-dark);
+    margin: 10px 0;
+}
+
+.text {
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.tag {
+    background-color: var(--line);
+    color: white;
+    font-size: 0.625rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 3px 10px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.author {
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin-top: 5px;
+    display: flex;
+}
+
+hr {
+    margin: 60px auto;
+    height: 2px;
+    background-color: var(--line);
+    border: none;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--dark-grey);
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
